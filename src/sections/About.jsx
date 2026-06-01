@@ -1,25 +1,44 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react"
+import { Bot, Search, Code, Brain, Cloud } from "lucide-react"
 
-const highlights = [
+const focusItem = [
     {
-        icon: Code2,
-        title: "Clean Code",
-        description: "Experience with Code Refactoring that maintain and scale the coding structure.",
+        icon: Bot,
+        title: "AI Agents",
+        progress: 40,
     },
     {
-        icon: Rocket,
-        title: "Performance",
-        description: "Experience of developing Deep learning model and enhance the backend system with senior  during Internship.",
+        icon: Search,
+        title: "Rag Architecture",
+        progress: 50,
     },
     {
-        icon: Users,
-        title: "Team Collaboration",
-        description: "Working closely with teams and bringing some suggestion of system improvement to the business.",
+        icon: Code,
+        title: "React.js Web Framework",
+        progress: 60,
     },
     {
-        icon: Lightbulb,
-        title: "Innovation",
-        description: "Self-learning of new technologies and best practices based on the video or coding guide.",
+        icon: Brain,
+        title: "Machine Learning Framework",
+        progress: 80,
+    },    
+]
+
+const quickStats = [
+    {
+        value: "4",
+        label:"Projects"
+    },
+    {
+        value: "1",
+        label:"Internship"
+    },
+    {
+        value: "2+",
+        label:"Hackathons"
+    },
+    {
+        value: "6+",
+        label:"Coding Languages"
     },
 ]
 
@@ -66,9 +85,9 @@ export const About = () =>  {
                         </div>
                     </div>
 
-                    {/* Right Column - Highlights */}
+                    {/* Right Column - Focus Items and Quick Stat*/}
                     <div className="grid sm:grid-cols-2 gap-6">
-                        {highlights.map((item, idx) => (
+                        {focusItem.map((item, idx) => (
                             <div 
                                 key={idx} 
                                 className="glass p-6 rounded-2xl animate-fade-in"
@@ -78,7 +97,26 @@ export const About = () =>  {
                                     <item.icon className="w-6 h-6 text-primary"/>
                                 </div>
                                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                                <p className="text-sm text-muted-foreground">{item.description}</p>
+                                <div className="h-2 bg-primary-foreground rounded-full overflow-hidden">
+                                    <div className="h-full bg-primary rounded-full transition-all duration-1000"
+                                    style={{ width: `${item.progress}%`}}
+                                    />    
+                                </div> 
+                            </div>
+                        ))}
+
+                        {quickStats.map((stat, idx)=> (
+                            <div 
+                                key={idx}
+                                className="glass p-6 rounded-2xl rounded-2xl animate-fade-in"
+                                style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+                            >
+                                <h4 className="text-3xl font-bold text-primary">
+                                    {stat.value}
+                                </h4>
+                                <p className="text-sm text-muted-foreground mt-1">
+                                    {stat.label}
+                                </p>
                             </div>
                         ))}
                     </div>

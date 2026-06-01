@@ -1,7 +1,9 @@
 import { GitHubIcons } from "@/components/GitHubIcons";
+import { LinkedinIcons } from "../components/LinkedinIcons";
 
 const socialLinks = [
   { icon:  GitHubIcons, href: "https://github.com/JeffH210", label: "GitHub" },
+  { icon:  LinkedinIcons, href: "https://www.linkedin.com/in/jeff-hong-12a368339/", label: "Linkedin" },
 ];
 
 const footerLinks = [

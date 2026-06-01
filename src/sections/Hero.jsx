@@ -1,6 +1,7 @@
 import { Button } from "@/components/Button";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 import { GitHubIcons } from "@/components/GitHubIcons";
+import { LinkedinIcons } from "../components/LinkedinIcons";
 import { ArrowRight, Phone, Mail, ChevronDown, Download} from "lucide-react";
 
 const skills = [
@@ -85,6 +86,13 @@ export const Hero = () =>  {
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button size="lg">
                                 Contact Me <ArrowRight className="w-5 h-5" />
+                            <Button asChild size="lg">
+                                <a 
+                                    href="#contact"
+                                    className="inline-flex items-center gap-2 px-2  text-md font-medium"
+                                >
+                                    Contact Me <ArrowRight className="w-5 h-5" />
+                                </a>
                             </Button>
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5" />
@@ -97,6 +105,7 @@ export const Hero = () =>  {
                             <span className="text-sm text-muted-foreground">Follow me: </span>
                             {[
                                 { icon: GitHubIcons, href: "https://github.com/JeffH210"},
+                                { icon: LinkedinIcons, href: "https://www.linkedin.com/in/jeff-hong-12a368339/"},
                                 { icon: Phone, href: "tel:+60173832588"},
                                 { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=sss901@gmail.com"},
                             ].map((social, idx) => (

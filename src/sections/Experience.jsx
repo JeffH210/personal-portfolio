@@ -1,5 +1,14 @@
 const experiences = [
     {
+        period: "2025-6",
+        role: "My Portfolio Website Design",
+        company: "-",
+        description: 
+            "Website Design framework using React + Vite, including Tailwind CSS and HTML to align well with the border, text allocation and handling emailJS responding services, using Vercel to deploy",
+        technologies: ["Javascript", "React", "Tailwind CSS", "HTML", "Vercel" ],
+        current: false,
+    },
+    {
         period: "2025-10 - 2026-01",
         role: "Final Year Project",
         company: "-",
@@ -92,7 +101,7 @@ export const Experience = () =>  {
                                             {exp.technologies.map((tech, techIdx) =>(
                                                 <span 
                                                     key={techIdx} 
-                                                    className="px-3 py-1 bg-surface text-sm rounded-full text-muted-foreground"
+                                                    className="px-3 py-1 bg-surface text-sm rounded-full text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300"
                                                 >
                                                     {tech}
                                                 </span>
