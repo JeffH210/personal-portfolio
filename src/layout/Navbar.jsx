@@ -48,7 +48,6 @@ export const Navbar = () => {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button>Contact Me</Button>
                     <a href="#contact">
                     <Button>Contact Me</Button>
                     </a>
