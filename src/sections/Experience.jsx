@@ -1,6 +1,15 @@
 const experiences = [
     {
-        period: "2025-6",
+        period: "2026-6",
+        role: "Medical RAG Dashboard",
+        company: "-",
+        description: 
+            "Built a full-stack Medical RAG (Retrieval-Augmented Generation) system that analyzes drug treatment data using semantic search and large language models.",
+        technologies: ["Python", "FastAPI", "Javascript", "React", "Next", "HTML", "PostgreSQL", "Docker" ],
+        current: true,
+    },
+    {
+        period: "2026-5",
         role: "My Portfolio Website Design",
         company: "-",
         description: 
