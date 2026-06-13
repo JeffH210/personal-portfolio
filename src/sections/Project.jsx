@@ -4,6 +4,15 @@ import { ArrowUpRight, Phone, Mail} from "lucide-react";
 
 const projects = [
     {
+        title: "Medical RAG Dashboard",
+        description: 
+            "Built a Medical RAG system and run Locally that retrieves drug information using FAISS and generates treatment insights with LLMs in a full-stack FastAPI and Next.js application.",
+        image: "projects/Medical RAG Dashboard.png",
+        tags: ["Python", "Groq", "Sentence Transformer", "FastAPI", "Next", "React", "PostgreSQL", "Docker"],
+        link: "#",
+        github: "https://github.com/JeffH210/medical-drug-treatment-rag-dashboard"
+    },
+    {
         title: "Student Depression Classifier Models Comparison",
         description: 
             "Developed AI-driven predictive models for student performance and mental health analysis, applying advanced optimization techniques and SHAP-based explainability to enhance accuracy and transparency.",

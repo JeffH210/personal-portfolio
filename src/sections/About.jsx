@@ -25,7 +25,7 @@ const focusItem = [
 
 const quickStats = [
     {
-        value: "4",
+        value: "5",
         label:"Projects"
     },
     {
@@ -37,7 +37,7 @@ const quickStats = [
         label:"Hackathons"
     },
     {
-        value: "6+",
+        value: "7+",
         label:"Coding Languages"
     },
 ]
